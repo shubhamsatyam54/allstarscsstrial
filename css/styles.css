@@ -1,0 +1,80 @@
+html{
+	font-size: 90%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.nav-bar .tab-navigation {
+  background-color: #006666;
+  color: white;
+}
+
+.nav-bar .tab-navigation ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar .tab-navigation li {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-bar .tab-navigation a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem 0;
+}
+
+.nav-bar .tab-navigation li:hover {
+  background-color: #CBC3E3;
+}
+
+/* Highlight the active page */
+.nav-bar .tab-navigation li.active {
+  background-color: purple;
+}
+
+
+
+/* Task-specific content display */
+body.task1 .tab-content:nth-child(2),
+body.task2 .tab-content:nth-child(3) {
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  
+  html{font-size : 50%; }
+  
+.content {
+  min-height: 10rem;
+}
+.sub-row {
+    gap: .2rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+ 
+  html{font-size : 50%; }
+  
+.content {
+  min-height: 10vh;
+}
+.sub-row {
+    gap: .2rem;
+  }
+}
+
+p{
+	text-align: center;
+}
