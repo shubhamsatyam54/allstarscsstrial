@@ -1,39 +1,10 @@
 
-root{
-  --mygrey = #333; 
+:root{
+  --black: #333333; 
 }
 
 /* Reset some default styles */
 
-@keyframes fade {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-   40% {
-    opacity: 0;
-    
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes banime{
-  0%{
-     border: 0.0rem solid #ddd;
-  border-radius: 1rem;
-
-  }
-
-  100%{
-     border: 0.1rem solid #ddd;
-  border-radius: 1rem;
-
-  }
-}
 
 body {
   color: white;
@@ -68,7 +39,7 @@ p{
 }
 
 header {
-  background-color: #333;
+  background-color: var(--black);
   color: white;
   padding: 2rem 0;
   text-align: center;
@@ -84,7 +55,7 @@ footer {
   text-align: center;
   align-content: center;
   padding: 2rem;
-  background-color: #333;
+  background-color: var(--black);
   color: white;
 }
 
@@ -129,23 +100,7 @@ footer {
   animation: fade 1s ease 1s 1 normal forwards;
 }
 
-@media only screen and (max-width: 767px) {
-  .content {
-    min-height: 10rem;
-  }
-  .sub-row {
-    gap: 0.2rem;
-  }
-}
 
-@media only screen and (max-width: 300px) {
-  .content {
-    min-height: 10vh;
-  }
-  .sub-row {
-    gap: 0.2rem;
-  }
-}
 
 @keyframes h2entry {
   0% {
@@ -196,3 +151,34 @@ footer {
       border-radius: 1rem;
     }
   }
+
+  
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+   40% {
+    opacity: 0;
+    
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes banime{
+  0%{
+     border: 0.0rem solid #ddd;
+  border-radius: 1rem;
+
+  }
+
+  100%{
+     border: 0.1rem solid #ddd;
+  border-radius: 1rem;
+
+  }
+}
