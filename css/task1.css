@@ -96,7 +96,7 @@ footer {
 .grid-row {
   display: grid;
   gap: 1rem;
-  border : 0;
+  border : ;
   padding: 1rem;
   animation: radialWipe 3s ease 0s 1 normal forwards;
 }
@@ -182,11 +182,13 @@ footer {
 
   @keyframes radialWipe {
     0% {
-      border: .2rem solid transparent;
+      border: .1rem solid transparent;
+      border-radius: 1rem;
       
     }
     50% {
-      border: .2rem solid transparent;
+      border: .1rem solid transparent;
+      border-radius: 1rem;
       
     }
     100% {
