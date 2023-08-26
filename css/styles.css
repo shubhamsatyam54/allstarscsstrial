@@ -1,5 +1,5 @@
 html{
-	font-size: 90%;
+	font-size: 100%;
 }
 
 body {
@@ -45,11 +45,7 @@ body {
 
 
 
-/* Task-specific content display */
-body.task1 .tab-content:nth-child(2),
-body.task2 .tab-content:nth-child(3) {
-  display: block;
-}
+
 
 @media all  and (max-width: 767px) {
   
