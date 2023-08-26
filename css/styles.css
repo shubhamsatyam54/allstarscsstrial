@@ -56,7 +56,7 @@ body.task2 .tab-content:nth-child(3) {
   html{font-size : 50%; }
   
 .content {
-  min-height: 10rem;
+  min-height: 100vh;
 }
 .sub-row {
     gap: .2rem;
@@ -68,7 +68,7 @@ body.task2 .tab-content:nth-child(3) {
   html{font-size : 50%; }
   
 .content {
-  min-height: 10vh;
+  min-height: 100vh;
 }
 .sub-row {
     gap: .2rem;
