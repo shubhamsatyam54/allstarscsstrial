@@ -51,7 +51,7 @@ body.task2 .tab-content:nth-child(3) {
   display: block;
 }
 
-@media only screen and (max-width: 767px) {
+@media all  and (max-width: 767px) {
   
   html{font-size : 80%; }
   
@@ -61,9 +61,13 @@ body.task2 .tab-content:nth-child(3) {
 .sub-row {
     gap: .2rem;
   }
+
+ footer p{
+  font-size: 12px;
+}
 }
 
-@media only screen and (max-width: 300px) {
+@media all and (max-width: 300px) {
  
   html{font-size : 80%; }
   
@@ -75,6 +79,3 @@ body.task2 .tab-content:nth-child(3) {
   }
 }
 
-p{
-	text-align: center;
-}
